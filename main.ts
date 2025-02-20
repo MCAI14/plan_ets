@@ -2,11 +2,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile1`, function (sprite, l
     info.changeScoreBy(1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile2`, function (sprite2, location2) {
-    while (false) {
-        for (let index = 0; index < 1; index++) {
-            info.changeScoreBy(-1)
-            scene.cameraShake(4, 500)
-        }
+    for (let index = 0; index < 1; index++) {
+        info.changeScoreBy(-1)
+        scene.cameraShake(4, 500)
     }
 })
 let Nave = sprites.create(img`

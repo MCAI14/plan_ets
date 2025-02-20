@@ -7,10 +7,9 @@ scene.on_overlap_tile(SpriteKind.player,
     on_overlap_tile)
 
 def on_overlap_tile2(sprite2, location2):
-    while False:
-        for index in range(1):
-            info.change_score_by(-1)
-            scene.camera_shake(4, 500)
+    for index in range(1):
+        info.change_score_by(-1)
+        scene.camera_shake(4, 500)
 scene.on_overlap_tile(SpriteKind.player,
     assets.tile("""
         myTile2

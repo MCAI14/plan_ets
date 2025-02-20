@@ -7,9 +7,10 @@ scene.on_overlap_tile(SpriteKind.player,
     on_overlap_tile)
 
 def on_overlap_tile2(sprite2, location2):
-    for index in range(1):
-        info.change_score_by(-1)
-        scene.camera_shake(4, 500)
+    while False:
+        for index in range(1):
+            info.change_score_by(-1)
+            scene.camera_shake(4, 500)
 scene.on_overlap_tile(SpriteKind.player,
     assets.tile("""
         myTile2
@@ -24,8 +25,8 @@ Nave = sprites.create(img("""
             e d d d d d d d d d d d e e . . . . 
             e d d d d d d d d d d d d e e . . . 
             e d d 4 4 d d d d 4 4 d d d e e . . 
-            e d 4 7 7 4 d d 4 7 7 4 d d d e e e 
-            e d 2 7 7 2 d d 2 7 7 2 d d d e e e 
+            e d 4 . . 4 d d 4 . . 4 d d d e e e 
+            e d 2 . . 2 d d 2 . . 2 d d d e e e 
             e d d 2 2 d d d d 2 2 d d d e e . . 
             e d d d d d d d d d d d d e e . . . 
             e d d d d d d d d d d d d e . . . . 

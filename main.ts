@@ -2,9 +2,11 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile1`, function (sprite, l
     info.changeScoreBy(1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile2`, function (sprite2, location2) {
-    for (let index = 0; index < 1; index++) {
-        info.changeScoreBy(-1)
-        scene.cameraShake(4, 500)
+    while (false) {
+        for (let index = 0; index < 1; index++) {
+            info.changeScoreBy(-1)
+            scene.cameraShake(4, 500)
+        }
     }
 })
 let Nave = sprites.create(img`
@@ -15,8 +17,8 @@ let Nave = sprites.create(img`
     e d d d d d d d d d d d e e . . . . 
     e d d d d d d d d d d d d e e . . . 
     e d d 4 4 d d d d 4 4 d d d e e . . 
-    e d 4 7 7 4 d d 4 7 7 4 d d d e e e 
-    e d 2 7 7 2 d d 2 7 7 2 d d d e e e 
+    e d 4 . . 4 d d 4 . . 4 d d d e e e 
+    e d 2 . . 2 d d 2 . . 2 d d d e e e 
     e d d 2 2 d d d d 2 2 d d d e e . . 
     e d d d d d d d d d d d d e e . . . 
     e d d d d d d d d d d d d e . . . . 
